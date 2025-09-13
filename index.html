@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>隨機圖片播放器</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎲 隨機圖片播放器</h1>
+    <div class="viewer-wrap">
+      <img id="viewer" src="" alt="圖片播放區" />
+    </div>
+
+    <div class="controls">
+      <button id="prevBtn" aria-label="上一張">◀ 上一張</button>
+      <button id="nextBtn" aria-label="下一張">下一張 ▶</button>
+      <label>
+        <input type="checkbox" id="autoplayToggle"> 自動播放
+      </label>
+      <label>
+        間隔（秒）：
+        <input type="number" id="intervalInput" min="1" value="3" />
+      </label>
+    </div>
+
+    <p id="status" class="status"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
